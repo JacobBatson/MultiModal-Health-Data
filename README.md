@@ -28,7 +28,7 @@ This project applies machine learning to predict depression severity in a cohort
 
 ### PHQ-9 Score Distribution & Class Balance
 
-img width="1784" height="581" alt="phq9_distribution" src="https://github.com/user-attachments/assets/c62e32e9-c1a3-439c-ad42-a62d32e04630" />
+![PHQ-9 Distribution](https://github.com/user-attachments/assets/c62e32e9-c1a3-439c-ad42-a62d32e04630)
 
 
 > The dataset is roughly balanced after binarization: 15 Low and 16 High depression cases among the 31 labeled participants.
@@ -68,7 +68,8 @@ Raw Data (per participant)
 
 ### Model Performance Comparison
 
-![Model Comparison](model_comparison.png)
+![model_comparison](https://github.com/user-attachments/assets/6c7f5984-2879-4506-884f-d2e9928cce7e)
+
 
 | Model | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
 |---|---|---|---|---|---|
@@ -81,11 +82,13 @@ Raw Data (per participant)
 
 ### Confusion Matrices
 
-![Confusion Matrices](confusion_matrices.png)
+![confusion_matrices](https://github.com/user-attachments/assets/2665cafc-8482-4707-b7ba-9b03bcd616c4)
+
 
 ### ROC Curves
 
-![ROC Curves](roc_curves.png)
+![roc_curves](https://github.com/user-attachments/assets/4282a196-ba7a-42c2-9f79-43cc4b03cec7)
+
 
 ---
 
@@ -93,7 +96,8 @@ Raw Data (per participant)
 
 5-fold stratified cross-validation over all 31 labeled samples:
 
-![CV Comparison](cv_comparison.png)
+![cv_comparison](https://github.com/user-attachments/assets/5cd10d05-f355-40c9-8cf8-6fc875675fc6)
+
 
 | Model | CV F1 (Mean ± Std) |
 |---|---|
@@ -110,7 +114,8 @@ Raw Data (per participant)
 
 ### Top Features (Random Forest & XGBoost)
 
-![Feature Importance](feature_importance.png)
+![feature_importance](https://github.com/user-attachments/assets/a6e5e68d-49c2-4300-b64f-ad496e512702)
+
 
 **Key findings:**
 - EMA daily mood features dominate both models — `ema_positive_mean`, `ema_lonely_mean`, `ema_isolate_mean`, `ema_connect_mean`, and `ema_negative_mean` account for ~40% of total RF importance
@@ -119,7 +124,8 @@ Raw Data (per participant)
 
 ### Feature Correlation Heatmap
 
-![Feature Correlation](feature_correlation.png)
+![feature_correlation](https://github.com/user-attachments/assets/e83c95fc-284f-4f3c-a2a6-6285c8f3f8a3)
+
 
 > Strong intra-modality correlations are visible among Oura sleep sub-metrics (duration, total, deep, REM, light are highly correlated), and among EMA mood features (loneliness and isolation are positively correlated; connectedness is negatively correlated with both). Cross-modality correlations are generally weak, confirming that each sensing stream contributes partially independent information.
 
