@@ -28,8 +28,8 @@ This project applies machine learning to predict depression severity in a cohort
 
 ### PHQ-9 Score Distribution & Class Balance
 
-![PHQ-9 Distribution](<img width="1784" height="581" alt="phq9_distribution" src="https://github.com/user-attachments/assets/c62e32e9-c1a3-439c-ad42-a62d32e04630" />
-)
+img width="1784" height="581" alt="phq9_distribution" src="https://github.com/user-attachments/assets/c62e32e9-c1a3-439c-ad42-a62d32e04630" />
+
 
 > The dataset is roughly balanced after binarization: 15 Low and 16 High depression cases among the 31 labeled participants.
 
